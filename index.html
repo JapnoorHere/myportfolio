@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./img/shapes/circle.png" class="shape square" alt="" />
+          <img src="./img/shapes/square.png" class="shape circle" alt="" />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+          <img src="./img/shapes/letters.png" class="letters" alt="" />
+          <img src="./img/shapes/points1.png"  style="height: 40%;" class="points points1" alt="" />
+        </div>
+
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="" style="width: 150%; height: auto;;" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#youtube">Youtube Videos  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="active">Hire me</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Japnoor Singh</h1>
+              <p class="text">
+                Hello, I'm Japnoor Singh<br>Android Developer and UI/UX Designer .
+              </p>
+              <a href="https://drive.google.com/file/d/17OBud8MM30JkNHI9sLT9louHrzUJZXH4/view" target="_blank" class="btn">My RESUME</a>
+            </div>
+
+            <div class="column-2 image">
+              <img
+                src="./img/shapes/points2.png"
+                class="points points2"
+                alt=""
+              />
+              <img src="./img/person.png" class="img-element z-index" alt="" style="width: 70%; height: auto;" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Services</h3>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points1.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/app-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Android Development</h3>
+                  <p class="text">
+                    As anx Android developer, I offer high-quality and innovative android development services. With a strong command over Kotlin, I create user-friendly apps that meet client requirements. 
+                  </p>
+                  <a href="#portfolio" 
+                  data-filter=".appdev"
+                  class="btn small">Check out</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points1.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/UI.png" class="icon" alt="" />
+                  <h3 class="title-sm">UI/UX Designs</h3>
+                  <p class="text">
+                    I thrive on building intuitive UI/UX designs, implementing advanced interfaces, and ensuring seamless integration to deliver exceptional user experiences.
+                  </p>
+                  <a href="#portfolio" 
+                  class="btn small">Check out</a>
+                </div>
+              </div>
+            </div>
+            
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./img/shapes/square.png" class="shape square" alt="" />
+            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./img/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" >My Portfolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+               <button class="filter-btn" data-filter=".appdev">
+                Android App
+              </button>
+              <button class="filter-btn" data-filter=".ui">UI/UX</button>
+             
+             
+            </div>
+
+            <div class="grid">
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <a href="https://github.com/Japnoor2104/EagleEyeVigilanceApp" target="_blank">
+                  <img src="./img/portfolio/eagleEye.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+              
+
+
+              <div class="grid-item ui">
+                <div class="gallery-image">
+                  <a href="https://github.com/Japnoor2104/LoginSignupDesign" target="_blank">
+                  <img src="./img/portfolio/loginSignup.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>UI/UX Design</h3>
+                      <h5>View Design</h5>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <a href="https://github.com/Japnoor2104/WordGuessingGame">
+                  <img src="./img/portfolio/wordGusessing.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Code</h5>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <a href="https://github.com/Japnoor2104/AESEncryptionDecryption">
+                  <img src="./img/portfolio/aes.png" style="width: 100%; height: 100%;"  alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Code</h5>
+                    </div>
+                  </div>
+                </a>  
+                </div>
+              </div>
+
+              
+            </div>
+          
+            </div>
+          </div>
+        
+          <!-- Modify the More Folio section -->
+          <!-- <div class="more-folio">
+            <a href="#" class="btn toggle-more-content">More Folio</a>
+          </div> -->
+        </div>
+        <script>
+          // Add JavaScript to toggle the visibility of the extra content
+          const moreFolioButton = document.querySelector('.toggle-more-content');
+          const extraContent = document.querySelector('.extra-content');
+        
+          moreFolioButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            extraContent.style.display = extraContent.style.display === 'none' ? 'block' : 'none';
+            moreFolioButton.textContent = extraContent.style.display === 'none' ? 'More Folio' : 'Hide Folio';
+          });
+        </script>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm</h3>
+              <p class="text">
+                  an experienced Android developer, skilled in Kotlin and XML for creating responsive, user-friendly
+                interfaces. Proficient in Android architecture and Firebase integration. Delivers projects on time and
+                adapts to new technologies for cutting-edge solutions.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">ANDROID USING KOTLIN</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">UI/UX</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="40%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">CORE JAVA</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="50%"></div>
+                  </div>
+                </div> <div class="skill js">
+                  <h3 class="skill-title">FIREBASE</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60%"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/about.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="records">
+        <div class="overlay overlay-sm">
+          <img src="./img/shapes/square.png" alt="" class="shape square1" />
+          <img src="./img/shapes/square.png" alt="" class="shape square2" />
+          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
+          <img
+            src="./img/shapes/half-circle.png"
+            alt=""
+            class="shape half-circle"
+          />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
+          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
+          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
+        </div>
+
+
+        <div class="container">
+          <div class="horizontal-wrap">
+            <a href="https://drive.google.com/file/d/17OBud8MM30JkNHI9sLT9louHrzUJZXH4/view?usp=drive_link" target="_blank">
+              <div class="record-circle active">
+                <img src="./img/cv.png" alt="Resume Icon" style="display: block; margin: 0 auto; width: 50%; height: 50%;">
+                <h4 class="sub-title"><b>Resume</b></h4>
+              </div>
+            </a>
+          </div>
+        
+          <div class="horizontal-wrap">
+            <a href="https://github.com/Japnoor2104" target="_blank">
+              <div class="record-circle active">
+                <img src="./img/github.png" alt="Github Icon" style="display: block; margin: 0 auto; width: 50%; height: 50%;">
+
+                <h4 class="sub-title"><b>GITHUB</b></h4>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-wrap">
+            <a href="https://www.youtube.com/channel/UCWMRbbyG5aFXQmqpG9zcMAw" target="_blank">
+              <div class="record-circle active">
+                <img src="./img/youtube.png" alt="Youtube Icon" style="display: block; margin: 0 auto; width: 50%; height: 50%;">
+
+                <h4 class="sub-title"><b>Youtube</b></h4>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-wrap">
+            <a href="https://www.linkedin.com/in/japnoor-singh-6009a0245/" target="_blank">
+              <div class="record-circle active">
+                <img src="./img/linkedin.png" alt="Linkedin Icon" style="display: block; margin: 0 auto; width: 50%; height: 50%;">
+
+                <h4 class="sub-title"><b>LINKEDIN</b></h4>
+              </div>
+            </a>
+          </div> 
+          
+        </div>
+        
+      </section>
+
+      <section class="blog section" id="youtube">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Latest YT Videos">My Videos</h3>
+            <p class="text">
+              These are my latest youtube videos.<br>
+              Subscribe to my channel for more content like this
+            </p>
+          </div>
+
+          <div class="blog-wrapper">
+            <div class="blog-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                alt=""
+                class="points points-sq"
+              />
+
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/exoAudioPlayer.png" alt="" style="width: 100%; height: 100%;"/>
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">June, 10 2023</h5>
+                  </div>
+                  <h3 class="title-sm">Audio Player using Exo Player </h3>
+                  <p class="blog-text">
+                    This video contains how you can easily use this code to make a music player in your Android Projects. Hope it helps you.
+                  </p>
+                  <a href="https://youtu.be/jVFVJU8kTt8" class="btn small" target="_blank">Watch Video</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/aesEncryption.png" alt="" style="width: 100%; height: 100%;"/>
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">June, 03 2023</h5>
+                  </div>
+                  <h3 class="title-sm">AES Encryption and Decryption</h3>
+                  <p class="blog-text">
+                    This video contains encryption and decryption of strings with easiest way. in Android Kotlin. Hope it helps you.
+                  </p>
+                  <a href="https://youtu.be/oEJqXtsRCQ0" class="btn small" target="_blank">Watch Video</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/loginSignup.png" alt="" style="width: 100%; height: 100%;"/>
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">May, 9 2023</h5>
+                    <h5 class="blog-user">
+                  </div>
+                  <h3 class="title-sm">Login Signup Using Email With OTP in Android Kotlin</h3>
+                  <p class="blog-text">
+                    This video is of how you can easily send otp while Login , Signup etc. on email in Android Kotlin.Hope it helps you.
+                  </p>
+                  <a href="https://youtu.be/Jdn1UBR54m4" class="btn small" target="_blank">Watch Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Get in touch</h3>
+              <p class="text">
+                Feel free to reach out to me for all your Android development and UI/UX design needs.  I look forward to collaborating with you on your next project!
+              </p>
+              <div class="information-wrap" style="margin-top: 20% ;">
+                <div class="information">
+                  <div class="contact-icon">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Jalandhar%2C%20Punjab%2C%20India" target="_blank">
+                    <i class="fas fa-map-marker-alt" style="color: white;"></i>
+                    </a>
+                  </div>
+                  <p class="info-text" class>Jalandhar. Punjab ,India</p>
+                </div>
+
+                <div class="information" style="margin-top: 10%;">
+                  <div class="contact-icon">
+                    
+                    <a href="https://mail.google.com/mail/?view=cm&to=sjapnoor11@gmail.com" target="_blank">
+                      <i class="fas fa-paper-plane" style="color: white;"></i></a>
+                  </div>
+                  <p class="info-text"  style="color: black;">sjapnoor11@gmail.com</p>
+                </div>
+
+                
+              </div>
+            </div>
+            
+            <form
+            action="https://formspree.io/f/xknadbkj"
+            method="POST"
+            onsubmit="clearForm()"
+          >
+            <div class="contact-form">
+              <h3 class="title">Contact me</h3>
+              
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="firstname"
+                  id="first"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="lastname"
+                  id="last"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="row">
+                <input id="phone" type="text" class="contact-input" placeholder="Phone" name="phone"/>
+                <input id ="email" type="email" class="contact-input" placeholder="Email" name="emaii"/>
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            
+            </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script>
+        function clearForm(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Clear the form fields
+          document.getElementById("first").value = "";
+          document.getElementById("last").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+      
+          // Submit the form after clearing the fields
+          setTimeout(function () {
+            event.target.submit();
+          }, 100);
+        }
+      </script>
+    
+      
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+            I'm an experienced Android developer, skilled in Kotlin and XML for creating responsive, user-friendly interfaces. Proficient in Android architecture and Firebase integration. Delivers projects on time and adapts to new technologies for cutting-edge solutions.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Services</h3>
+            <ul>
+              <li>
+                <a href="#services">App Development</a>
+              <li>
+                <a href="#services">UI/UX Design</a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-lin">
+            <h3 class="title-sm">Subscribe</h3>
+            <a href="https://www.youtube.com/channel/UCWMRbbyG5aFXQmqpG9zcMAw" target="_blank">
+              <p class="text"  style="color: #888888; " >
+                Subscribe to my Youtube Channel - Droidbytes
+            </p>
+          </a>
+            <div class="footer-input"  style="background-color: #222222;">
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+               Made by
+              <span class="split-text" data-text="FORUM"><a
+                href="#" >Japnoor Singh</a></span>
+             
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://github.com/Japnoor2104" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+                <a href="https://www.instagram.com/japnoor.here/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCWMRbbyG5aFXQmqpG9zcMAw" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/japnoor-singh-6009a0245/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/2104Japnoor" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>  
+               
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
